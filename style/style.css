@@ -94,24 +94,117 @@ main{
 .team-article{
     color: #727272;
 }
-/* responsive headder */
+.facts-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+.card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card-tital{
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+    margin-top: 5px;
+}
+.aline{
+    text-align: center;
+}
+.spon-img{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 165px;
+    gap: 20px;
+}
+.text-light-gray{
+    color: #727272;
+    font-size: 16px;
+}
+.features{
+    display: flex;
+    margin-top: 130px;
+    gap: 130px;
+}
+.card1{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.features-content1{
+    padding-left: 30px;
+}
+.features-content1 h3{
+    font-size: 45px;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.ten-years{
+    border-radius: 8px;
+    background-color: #FF900E;
+    color: #FFF;
+    width: 340px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years h2{
+    font-size: 4rem;
+    margin-top: 0;
+}
+.ten-years p{
+    font-size: 1.5rem;
+}
+footer{
+    background-color: #FFF4E7;
+    padding: 40px 0px;
+    margin: 200px 90px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
 @media screen and (max-width:576px) {
     header{
         padding: 15px;
     }
     nav,
-    .teams-container{
+    .teams-container,.facts-card-container, .spon-img, .features{
         flex-direction: column;
     }
     .team-img-container{
         grid-template-columns: 1fr;
     }
-    .team-content{
+    .team-content,.facts-card-container{
         padding: 20px 20px;
+    }
+    .facts-card-container{
+        gap: 5px;
+    }
+    .features-img img{
+        width: 100%;
+    }
+    .ten-years{
+        position: static;
+        max-width: 300px;
     }
 }
 @media screen and (min-width:576px) and (max-width: 960px) {
-    nav, .teams-container{
+    nav, .teams-container, .spon-img, .features {
         flex-direction: column;
     }
     header{
